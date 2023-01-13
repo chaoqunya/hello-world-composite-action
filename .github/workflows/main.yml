@@ -14,3 +14,9 @@ jobs:
           who-to-greet: "Chaos"
       - run: echo random-number ${{ steps.foo.outputs.random-number }} test
         shell: bash
+      - id: bar
+        uses: ./.github/actions/hello-world
+        with:
+          who-to-greet: "Chaos"
+      - run: echo random-number ${{ steps.bar.outputs.random-number }} test
+        shell: bash
