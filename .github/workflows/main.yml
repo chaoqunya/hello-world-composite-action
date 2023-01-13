@@ -11,6 +11,6 @@ jobs:
       - id: foo
         uses: chaoqunya/hello-world-composite-action@v1
         with:
-          who-to-greed: "Chaos"
+          who-to-greet: "Chaos"
       - run: echo "random-number ${{ steps.foo.outputs.random-number }}"
         shell: bash
