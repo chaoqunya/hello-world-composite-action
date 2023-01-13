@@ -1,5 +1,5 @@
 name: "Hello World"
-description: "Greet someone"
+description: "Greet to my little friend"
 inputs:
   who-to-greet:
     description: "who to greet"
@@ -15,7 +15,7 @@ runs:
     - run: echo Hello ${{ inputs.who-to-greet }}.
       shell: bash
     - id: random-number-generator
-      run: echo "random-number=$(echo $RANDOM)" >> $GITHUB_OUTPUT
+      run: echo "random-number=$(echo test-random-number)" >> $GITHUB_OUTPUT
       shell: bash
     - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
       shell: bash
