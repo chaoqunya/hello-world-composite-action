@@ -12,5 +12,5 @@ jobs:
         uses: chaoqunya/hello-world-composite-action@v1
         with:
           who-to-greet: "Chaos"
-      - run: echo "random-number ${{ steps.foo.outputs.random-number }} test"
+      - run: echo random-number ${{ steps.foo.outputs.random-number }} test
         shell: bash
