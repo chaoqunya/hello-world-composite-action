@@ -1,5 +1,5 @@
-name: "Hello world"
-description: "Greet my little friend"
+name: "Hello World"
+description: "Greet someone"
 inputs:
   who-to-greet:
     description: "who to greet"
@@ -7,10 +7,10 @@ inputs:
     default: "World"
 outputs:
   random-number:
-    description: "random number"
+    description: "Random number"
     value: ${{ steps.random-number-generator.outputs.random-number }}
 runs:
-  using: composite
+  using: "composite"
   steps:
     - run: echo Hello ${{ inputs.who-to-greet }}.
       shell: bash
